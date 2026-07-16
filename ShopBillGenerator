@@ -1,0 +1,29 @@
+# shopping bill generater
+# problem statement:
+# write a py program to:
+# accept the prices of 6 products from the user
+# stor item in a list
+# display all product prices
+# calculate total bill amt
+# als calculate 18% gst and siplay the final bill
+
+prodcut_price = []
+
+for i in range(5):
+    price = eval(input(f"Enter A {i + 1} Product Price :"))
+    prodcut_price.append(price)
+
+sr = 1
+total_price = 0
+for price in prodcut_price:
+    print(f"{sr} Product Price : {price}")
+    sr += 1
+    total_price += price
+
+print(f" Total Product Price Is  {total_price}")
+
+# total_num = len(prodcut_price)
+
+gst = total_price * 0.18
+
+print(f"Total product price with GST {gst}")
