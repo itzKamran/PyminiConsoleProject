@@ -63,3 +63,26 @@ class Library:
                 return
 
         print("Book Not Found")
+library = Library()
+
+book1 = Book("Python", "Guido")
+
+book2 = Book("Java", "James")
+
+book3 = Book("C++", "Bjarne")
+
+library.add_book(book1)
+library.add_book(book2)
+library.add_book(book3)
+
+student1 = Student("Kamran", 101)
+
+library.show_books()
+
+library.issue_book("Python")
+
+library.show_books()
+
+library.return_book("Python")
+
+library.show_books()
